@@ -1,0 +1,7 @@
+ja:
+  active_admin:
+    toggle_dark_mode: "ダークモードを切り替える"
+    toggle_main_navigation_menu: "メインナビゲーションメニューを切り替える"
+    toggle_section: "セクションを切り替える"
+    toggle_user_menu: "ユーザーメニューを切り替える"
+

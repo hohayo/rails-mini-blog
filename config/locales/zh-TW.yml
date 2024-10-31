@@ -1,15 +1,9 @@
 zh-TW:
   active_admin:
-    toggle_section:
-      show: "展開"
-      hide: "收合"
-    toggle_user_menu:
-      sign_out: "登出"
-    toggle_dark_mode:
-      dark_mode: "暗黑模式"
-      light_mode: "明亮模式"
-    toggle_main_navigation_menu:
-      main_navigation: "主要導覽"
+    toggle_dark_mode: "切換暗黑模式"
+    toggle_main_navigation_menu: "切換主要導覽"
+    toggle_section: "切換區塊"
+    toggle_user_menu: "切換使用者選單"
   activerecord:
     models:
       user: "使用者"
