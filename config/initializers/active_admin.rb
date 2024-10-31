@@ -6,7 +6,7 @@ ActiveAdmin.setup do |config|
   # by extracting the _site_header partial into your project
   # to use your own logo, styles, etc.
   #
-  config.site_title = "Rails Blog"
+  config.site_title = "Mini Blog"
 
   # == Load Paths
   #

@@ -61,3 +61,6 @@ end
 gem "activeadmin", "~> 4.0.0.beta13"
 gem "devise"
 gem "pundit"
+gem "rails-i18n"
+gem "devise-i18n"
+
