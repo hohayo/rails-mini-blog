@@ -141,6 +141,11 @@ ActiveAdmin.setup do |config|
   #
   # You can customize the comment menu:
   # config.comments_menu = { parent: 'Admin', priority: 1 }
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add id: :settings, label: proc { I18n.t("activerecord.models.settings") }
+    end
+  end
 
   # == Batch Actions
   #

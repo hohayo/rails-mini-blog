@@ -1,5 +1,8 @@
 zh-TW:
   active_admin:
+    toggle_section:
+      show: "展開"
+      hide: "收合"
     toggle_user_menu:
       sign_out: "登出"
     toggle_dark_mode:
@@ -9,9 +12,10 @@ zh-TW:
       main_navigation: "主要導覽"
   activerecord:
     models:
-      user: "使用者管理"
-      post: "文章管理"
-      author: "作者管理"
+      user: "使用者"
+      post: "文章"
+      author: "作者"
+      settings: "設定"
     attributes:
       author:
         id: "編號"

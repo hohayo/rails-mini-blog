@@ -1,4 +1,5 @@
 ActiveAdmin.register Author do
+  menu priority: 2
   # Specify parameters which should be permitted for assignment
   permit_params :name, :email
 

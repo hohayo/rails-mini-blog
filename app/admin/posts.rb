@@ -1,4 +1,5 @@
 ActiveAdmin.register Post do
+  menu priority: 3
   # Specify parameters which should be permitted for assignment
   permit_params :title, :body, :published_at, :author_id
 
