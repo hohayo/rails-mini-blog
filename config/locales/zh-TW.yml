@@ -1,0 +1,9 @@
+zh-TW:
+  active_admin:
+    toggle_user_menu:
+      sign_out: "登出"
+    toggle_dark_mode:
+      dark_mode: "暗黑模式"
+      light_mode: "明亮模式"
+    toggle_main_navigation_menu:
+      main_navigation: "主要導覽"
