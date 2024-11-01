@@ -1,7 +1,7 @@
 ActiveAdmin.register Post do
   menu priority: 3
   # Specify parameters which should be permitted for assignment
-  permit_params :title, :body, :published_at, :author_id
+  permit_params :title, :body, :published_at, :author_id, :image
 
   # or consider:
   #
@@ -27,6 +27,7 @@ ActiveAdmin.register Post do
   index do
     selectable_column
     id_column
+    column :image
     column :title
     column :body
     column :published_at
@@ -40,6 +41,9 @@ ActiveAdmin.register Post do
   show do
     attributes_table_for(resource) do
       row :id
+      row :image do |p|
+        image_tag p.image if p.image.attached?
+      end
       row :title
       row :body
       row :published_at
@@ -56,6 +60,7 @@ ActiveAdmin.register Post do
       f.input :title
       f.input :body
       f.input :published_at
+      f.input :image, as: :file, input_html: { accept: "image/*" }
       f.input :author
     end
     f.actions

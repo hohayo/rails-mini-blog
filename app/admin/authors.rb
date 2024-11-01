@@ -1,7 +1,7 @@
 ActiveAdmin.register Author do
   menu priority: 2
   # Specify parameters which should be permitted for assignment
-  permit_params :name, :email
+  permit_params :name, :email, :avatar
 
   # or consider:
   #
@@ -25,6 +25,9 @@ ActiveAdmin.register Author do
   index do
     selectable_column
     id_column
+    column :avatar do |a|
+      image_tag a.avatar.variant(:thumb) if a.avatar.attached?
+    end
     column :name
     column :email
     column :created_at
@@ -36,6 +39,9 @@ ActiveAdmin.register Author do
   show do
     attributes_table_for(resource) do
       row :id
+      row :avatar do |a|
+        image_tag a.avatar.variant(:square) if a.avatar.attached?
+      end
       row :name
       row :email
       row :created_at
@@ -47,6 +53,7 @@ ActiveAdmin.register Author do
   form do |f|
     f.semantic_errors(*f.object.errors.attribute_names)
     f.inputs do
+      f.input :avatar, as: :file, input_html: { accept: "image/*" }
       f.input :name
       f.input :email
     end
