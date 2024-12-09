@@ -58,7 +58,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "activeadmin", "~> 4.0.0.beta13"
+gem "activeadmin", "~> 4.0.0.beta15"
 gem "devise"
 gem "pundit"
 gem "rails-i18n"
